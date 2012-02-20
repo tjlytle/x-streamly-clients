@@ -75,9 +75,9 @@ class XStreamlyClient{
     
     if(!$canRead || !$canWrite){
       if($canWrite){
-        $action = 'read';
-      } else {
         $action = 'write';
+      } else {
+        $action = 'read';
       }
       
       $data['action']=$action;
